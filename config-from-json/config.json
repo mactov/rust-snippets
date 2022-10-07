@@ -1,0 +1,5 @@
+{
+    "db_name": "testDB",
+    "db_user": "testUser",
+    "db_password": "not4ProdPWD"
+}
