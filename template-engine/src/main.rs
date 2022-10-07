@@ -17,9 +17,9 @@ fn main() {
             .expect("Should have been able to read the file");
         let re: Regex = Regex::new(r"\{\{ (.+?) \}\}").unwrap();
         let mut values_to_feed: Vec<String> = Vec::new();
-        for cap in re.captures_iter(&contents) {
-            if !(values_to_feed.iter().any(|n| n == &cap[1])) {
-                values_to_feed.push(cap[1].to_string());
+        for capture in re.captures_iter(&contents) {
+            if !(values_to_feed.iter().any(|n| n == &capture[1])) {
+                values_to_feed.push(capture[1].to_string());
             }
         }
         for val in values_to_feed {
