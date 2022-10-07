@@ -1,0 +1,2 @@
+- Hi from {{ location }}. My name is {{ name }}.
+- Hi {{ name }}, nice to meet you!
