@@ -22,7 +22,7 @@ The program reads a config file written in the json format to load its configura
 
 ## Usage
 
-When in the config_from_json directory, just type the following command
+When in the config-from-json directory, just type the following command
 ```
 cargo run config.json
 ```
